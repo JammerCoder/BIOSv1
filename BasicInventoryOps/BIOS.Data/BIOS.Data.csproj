@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Context\BIOSContext.cs" />
     <Compile Include="Context\BIOSDbInit.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

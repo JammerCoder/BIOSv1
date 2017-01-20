@@ -12,7 +12,7 @@ namespace BIOS.Data.Context
     {
         public BIOSContext() : base("BIOSConnectionString")
         {
-            Database.SetInitializer<BIOSContext>(new BIOSDbInit());
+            
         }
 
         public DbSet<Rack> Racks { get; set; }
