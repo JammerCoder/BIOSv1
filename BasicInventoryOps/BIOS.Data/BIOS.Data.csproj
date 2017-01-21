@@ -79,7 +79,8 @@
   <ItemGroup>
     <Compile Include="Configuration\MySqlConfiguration.cs" />
     <Compile Include="Context\BIOSContext.cs" />
-    <Compile Include="Context\BIOSDbInit.cs" />
+    <Compile Include="Context\MySqlHistoryContext.cs" />
+    <Compile Include="Context\MySqlInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
