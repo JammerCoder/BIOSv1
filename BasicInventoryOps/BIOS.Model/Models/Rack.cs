@@ -5,6 +5,11 @@ namespace BIOS.Model.Models
 {
     public class Rack
     {
+        public Rack()
+        {
+            Products = new List<Product>();
+        }
+
         public Guid Id { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }

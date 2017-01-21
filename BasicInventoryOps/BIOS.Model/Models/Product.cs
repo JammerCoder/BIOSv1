@@ -15,6 +15,7 @@ namespace BIOS.Model.Models
         public decimal Reorder { get; set; }
         public decimal Markup { get; set; }
         public DateTime LastUpdated { get; set; }
+
         public Guid RackId { get; set; }
         public Guid SupplierId { get; set; }
 
