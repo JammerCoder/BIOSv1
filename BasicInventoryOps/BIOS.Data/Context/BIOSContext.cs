@@ -12,7 +12,6 @@ namespace BIOS.Data.Context
     {
         public BIOSContext() : base("BIOSConnectionString")
         {
-
         }
 
         public DbSet<Rack> Racks { get; set; }
