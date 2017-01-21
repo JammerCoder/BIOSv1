@@ -12,7 +12,7 @@ namespace BIOS.Data.Context
     {
         public BIOSContext() : base("BIOSConnectionString")
         {
-            
+
         }
 
         public DbSet<Rack> Racks { get; set; }
@@ -21,9 +21,7 @@ namespace BIOS.Data.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            
             base.OnModelCreating(modelBuilder);
         }
-
     }
 }
