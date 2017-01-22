@@ -1,0 +1,48 @@
+﻿.mid {
+    max-width: 150px;
+}
+.normal {
+    max-width: 200px;
+}
+.large {
+    max-width: 400px;
+}
+
+body.form-body {
+    background-color: #bdc3c7;
+}
+
+.panel-body-scrollable{
+    overflow-y: scroll;
+}
+
+table
+{
+	width: 500px;
+	border-collapse: collapse;
+}
+
+thead
+{
+	display: block;
+	width: 100%;
+	overflow: auto;
+	color: #fff;
+	background: #000;
+}
+
+tbody
+{
+	display: block;
+	width: 100%;
+	height: 150px;
+	overflow: auto;
+}
+
+th,td
+{
+	padding: .5em 1em;
+	text-align: left;
+	vertical-align: top;
+	border-left: 1px solid #fff;
+}

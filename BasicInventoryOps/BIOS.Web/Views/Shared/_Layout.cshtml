@@ -6,8 +6,12 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @*CSS*@
+    <link href="~/Assets/Style/forms.css" rel="stylesheet" />
+    @*JS*@
+    <script src="~/Scripts/angular.js"></script>
 </head>
-<body>
+<body data-ng-app="">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -29,10 +33,12 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        @*<hr />
+        <div class="col-md-12">
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Basic Inventory Operations System v1</p>
+            </footer>
+        </div>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")

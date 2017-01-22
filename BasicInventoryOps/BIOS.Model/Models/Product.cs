@@ -10,7 +10,7 @@ namespace BIOS.Model.Models
         public string SKU { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public Enum Aisle { get; set; }
+        public char Aisle { get; set; }
         public decimal OnHand { get; set; }
         public decimal Reorder { get; set; }
         public decimal Markup { get; set; }
@@ -22,10 +22,5 @@ namespace BIOS.Model.Models
         public virtual Rack Rack { get; set; }
         public virtual Supplier Supplier { get; set; }
 
-    }
-
-    public enum Aisle
-    {
-        Left, Right
     }
 }
