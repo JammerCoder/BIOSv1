@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIOS.Model", "BIOS.Model\BI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIOS.Web", "BIOS.Web\BIOS.Web.csproj", "{BF69C535-BB84-4B8A-A854-75C58423C5CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularTraining", "AngularTraining\AngularTraining.csproj", "{837DDB86-DC36-4BB4-8CC7-F0B4FE4E82DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BF69C535-BB84-4B8A-A854-75C58423C5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF69C535-BB84-4B8A-A854-75C58423C5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF69C535-BB84-4B8A-A854-75C58423C5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837DDB86-DC36-4BB4-8CC7-F0B4FE4E82DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837DDB86-DC36-4BB4-8CC7-F0B4FE4E82DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837DDB86-DC36-4BB4-8CC7-F0B4FE4E82DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837DDB86-DC36-4BB4-8CC7-F0B4FE4E82DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<hr />
+
+<div class="col-md-6">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Panel Title</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="form-label col-md-2" for="inputItem">Item</label>
+                <input class="form-control col-md-10" type="text" data-ng-model="item" />
+                {{item}}
+            </div>
+        </div>
+        <div class="panel-footer">The Footer</div>
+    </div>
+</div>
+<div class="col-md-6" >
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="input-group input-group-sm">
+                <span class="input-group-addon" id="sizing-addon3">Search</span>
+                <input type="text" class="form-control" placeholder="Search Item" data-ng-model="itemFilter" aria-describedby="sizing-addon3">
+            </div>
+        </div>
+        <div class="panel-body">
+            <table class="table table-condensed table-stripped table-hover">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="p in products | filter: itemFilter | orderBy:'name'">
+                        <td>{{p.name }}</td>
+                        <td>{{p.type}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">The Footer</div>
+    </div>
+</div>
+<script type="text/script">
+
+</script>
