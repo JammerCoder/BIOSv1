@@ -19,6 +19,8 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
+        <div data-ng-init="code='001';name='rack';description='descriptive details'"></div>
+
         <div class="col-sm-6">
             <div class="panel panel-primary">
                 <div class="panel-heading"></div>
@@ -26,29 +28,29 @@
                     <div class="form-group">
                         <label for="rackCode" class="control-label col-md-2">Code</label>
                         <div class="col-md-10">
-                            <input class="form-control mid" id="rackCode" type="text" placeholder="Rack Code" />
+                            <input class="form-control mid" id="rackCode" type="text" placeholder="Rack Code" data-ng-model="code" /> {{code}}
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="rackName" class="control-label col-md-2">Name</label>
                         <div class="col-md-10">
-                            <input class="form-control large" id="rackName" type="text" placeholder="Name" />
+                            <input class="form-control large" id="rackName" type="text" placeholder="Name" data-ng-model="name" /> {{name}}
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="rackDescription" class="control-label col-md-2">Description</label>
                         <div class="col-md-10">
-                            <textarea class="form-control large" id="rackDesc" type="text" placeholder="Description" rows="3"></textarea>
+                            <textarea class="form-control large" id="rackDesc" type="text" placeholder="Description" rows="3" data-ng-model="description"></textarea> {{description}}
                         </div>
                     </div>
                 </div>
                 <div class="panel-footer">
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Edit" class="btn btn-default" />
                             <input type="submit" value="New" class="btn btn-default" />
+                            <input type="submit" value="Edit" class="btn btn-default" />
                             <input type="submit" value="Delete" class="btn btn-default" />
                         </div>
                     </div>
